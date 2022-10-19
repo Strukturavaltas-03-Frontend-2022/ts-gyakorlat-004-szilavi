@@ -8,26 +8,12 @@ import { ITransformer } from "./hero-interface";
  * Definiáld a konstruktort és kérj be minden változót, majd állítsd be őket.
  */
 export class TransformerHero implements ITransformer {
-  id: number;
-  name: string;
-  photo?: string;
-  wings: number;
-  wheels: number;
-  clan: string;
-
   constructor(
-    id: number,
-    name: string,
-    wings: number,
-    wheels: number,
-    clan: string,
-    photo?: string
-  ) {
-    this.id = id;
-    this.name = name;
-    this.wings = wings;
-    this.wheels = wheels;
-    this.clan = clan;
-    this.photo = photo;
-  }
+    public id: number,
+    public name: string,
+    public wings: number,
+    public wheels: number,
+    public clan: string,
+    public photo?: string
+  ) {}
 }
