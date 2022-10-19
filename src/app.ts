@@ -36,8 +36,9 @@ export const humans: HumanHero[] = [
 //  wheels: number;
 //  clan: string;
 
+//valójában ez volt a feladat, de kíváncsi voltam, hogy miként működnek még a dolgok
 export const transformers: TransformerHero[] = [
-  { id: 1, name: "Ezeket", wings: 1, wheels: 1, clan: "Ezek" },
-  { id: 2, name: "nem", wings: 2, wheels: 2, clan: "klánban" },
-  { id: 3, name: "ismerem", wings: 3, wheels: 3, clan: "járnak?" },
+  new TransformerHero(1, "Ezeket", 1, 1, "Ezeket"),
+  new TransformerHero(2, "nem", 2, 2, "klánban"),
+  new TransformerHero(3, "ismerem", 3, 3, "járnak?"),
 ];
